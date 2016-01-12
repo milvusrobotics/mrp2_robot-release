@@ -1,0 +1,31 @@
+<launch>
+
+  <include file="$(find mrp2_description)/launch/description.launch" />
+  
+  <node pkg="mrp2_hardware" type="mrp2_hardware" name="mrp2_hardware" >
+    <param name="use_sonar" value="$(optenv MRP2_SONAR 0)"/>
+    <param name="sonar_port" type="string" value="/dev/mrp2_ftdi_$(optenv MRP2_SONAR_SERIAL)"/>
+  </node>
+
+  <group if="$(optenv MRP2_IMU 0)">
+    <arg name="imu_name" default="$(optenv MRP2_IMU_NAME um6)" />
+    <include file="$(find mrp2_bringup)/launch/$(arg imu_name)/$(arg imu_name).launch" />
+  </group>
+
+  <group if="$(optenv MRP2_LASER 0)">
+    <arg name="laser_name" default="$(optenv MRP2_LASER_NAME utm30_lx)" />
+    <include file="$(find mrp2_bringup)/launch/$(arg laser_name)/$(arg laser_name).launch" />
+  </group>
+
+  <include file="$(find mrp2_control)/launch/controls.launch" />
+
+  <include file="$(find mrp2_control)/launch/teleop.launch" />
+
+  <!-- Diagnostic Analyzer -->
+  <node pkg="mrp2_analyzer" type="mrp2_diag_publisher.py" name="mrp2_diag_publisher" />
+
+  <node pkg="diagnostic_aggregator" type="aggregator_node" name="diagnostic_aggregator" >
+    <rosparam command="load" file="$(find mrp2_analyzer)/config/mrp2_analyzer_load.yaml" />
+  </node>
+
+</launch>
