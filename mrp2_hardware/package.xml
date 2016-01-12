@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package>
+  <name>mrp2_hardware</name>
+  <version>0.2.1</version>
+  <description>Hardware files to communicate with MRP2 base.</description>
+  <maintainer email="akifhno@gmail.com">Akif Hacinecipoglu</maintainer>
+  <license>BSD</license>
+
+  <author email="akifhno@gmail.com">Akif Hacinecipoglu</author>
+  <url type="website">http://wiki.ros.org/Robots/MRP2</url>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>controller_interface</build_depend>
+  <build_depend>controller_manager</build_depend>
+  <build_depend>hardware_interface</build_depend>
+  <build_depend>realtime_tools</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>urdf</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>nav_msgs</run_depend>
+  <run_depend>controller_interface</run_depend>
+  <run_depend>controller_manager</run_depend>
+  <run_depend>hardware_interface</run_depend>
+  <run_depend>realtime_tools</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>urdf</run_depend>
+
+</package>
