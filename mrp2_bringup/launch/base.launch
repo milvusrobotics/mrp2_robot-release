@@ -5,9 +5,11 @@
   <node pkg="mrp2_hardware" type="mrp2_hardware" name="mrp2_hardware" output="screen">
   </node>
 
-  <node pkg="mrp2_display" type="mrp2_display_node" name="mrp2_display">
-    <param name="port" value="/dev/ttyS0"/>
+  <node pkg="mrp2_display" type="mrp2_display_node" name="mrp2_display" output="screen">
+    <param name="port" value="/dev/ttyS1"/>
   </node>
+
+  <include file="$(find roboteq)/launch/roboteq.launch" />
 
   <group if="$(optenv MRP2_SONAR 0)">
     <node pkg="mrp2_hardware" type="mrp2_sonar" name="mrp2_sonar" output="screen">
@@ -32,9 +34,9 @@
   <include file="$(find mrp2_control)/launch/teleop.launch" />
 
   <!-- Diagnostic Analyzer -->
-  <node pkg="mrp2_analyzer" type="mrp2_diag_publisher.py" name="mrp2_diag_publisher" />
+  <node pkg="mrp2_analyzer" type="mrp2_diag_publisher.py" name="mrp2_diag_publisher" output="screen" />
 
-  <node pkg="diagnostic_aggregator" type="aggregator_node" name="diagnostic_aggregator" >
+  <node pkg="diagnostic_aggregator" type="aggregator_node" name="diagnostic_aggregator" output="screen" >
     <rosparam command="load" file="$(find mrp2_analyzer)/config/mrp2_analyzer_load.yaml" />
   </node>
 
