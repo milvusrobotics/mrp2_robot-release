@@ -1,3 +1,30 @@
+## mrp2_robot (melodic) - 0.2.5-2
+
+The packages in the `mrp2_robot` repository were released into the `melodic` distro by running `/usr/bin/bloom-release --rosdistro melodic --track melodic mrp2_robot` on `Thu, 01 Oct 2020 07:16:54 -0000`
+
+These packages were released:
+- `mrp2_bringup`
+- `mrp2_display`
+- `mrp2_hardware`
+- `mrp2_robot`
+
+Version of package(s) in repository `mrp2_robot`:
+
+- upstream repository: https://github.com/milvusrobotics/mrp2_robot.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `0.2.5-1`
+- new version: `0.2.5-2`
+
+Versions of tools used:
+
+- bloom version: `0.9.8`
+- catkin_pkg version: `0.4.22`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.2`
+- vcstools version: `0.1.42`
+
+
 ## mrp2_robot (melodic) - 0.2.5-1
 
 The packages in the `mrp2_robot` repository were released into the `melodic` distro by running `/usr/bin/bloom-release mrp2_robot --rosdistro melodic --track melodic --edit` on `Thu, 24 Sep 2020 08:56:29 -0000`
