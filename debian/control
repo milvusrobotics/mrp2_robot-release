@@ -1,0 +1,12 @@
+Source: ros-melodic-mrp2-hardware
+Section: misc
+Priority: optional
+Maintainer: Akif Hacinecipoglu <akifhno@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libusb-1.0-0-dev, ros-melodic-catkin, ros-melodic-controller-interface, ros-melodic-controller-manager, ros-melodic-dynamic-reconfigure, ros-melodic-hardware-interface, ros-melodic-nav-msgs, ros-melodic-realtime-tools, ros-melodic-roscpp, ros-melodic-rospy, ros-melodic-sensor-msgs, ros-melodic-std-msgs, ros-melodic-std-srvs, ros-melodic-tf, ros-melodic-urdf
+Homepage: http://wiki.ros.org/mrp2_hardware
+Standards-Version: 3.9.2
+
+Package: ros-melodic-mrp2-hardware
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libusb-1.0-0-dev, ros-melodic-controller-interface, ros-melodic-controller-manager, ros-melodic-dynamic-reconfigure, ros-melodic-hardware-interface, ros-melodic-nav-msgs, ros-melodic-realtime-tools, ros-melodic-roscpp, ros-melodic-rospy, ros-melodic-sensor-msgs, ros-melodic-std-msgs, ros-melodic-std-srvs, ros-melodic-tf, ros-melodic-urdf
+Description: Hardware files to communicate with MRP2 base.
