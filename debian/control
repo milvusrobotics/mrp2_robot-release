@@ -1,0 +1,12 @@
+Source: ros-melodic-mrp2-bringup
+Section: misc
+Priority: optional
+Maintainer: Akif Hacinecipoglu <akifhno@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin
+Homepage: http://wiki.ros.org/mrp2_bringup
+Standards-Version: 3.9.2
+
+Package: ros-melodic-mrp2-bringup
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-joy, ros-melodic-joy-teleop, ros-melodic-mrp2-description, ros-melodic-robot-state-publisher, ros-melodic-twist-mux, ros-melodic-urg-node
+Description: Launch files and configurations for starting MRP2 robot in a real environment.

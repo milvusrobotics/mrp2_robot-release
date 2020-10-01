@@ -1,0 +1,33 @@
+ros-melodic-mrp2-bringup (0.2.5-2stretch) stretch; urgency=high
+
+  * Minor fixes
+  * Fixed bringup
+  * Implemented motor controller
+  * Solved hw problems. Updated parameters.
+  * Contributors: Akif
+
+ -- Akif Hacinecipoglu <akifhno@gmail.com>  Mon, 15 Aug 2016 21:00:00 -0000
+
+ros-melodic-mrp2-bringup (0.2.4-2stretch) stretch; urgency=high
+
+  * Updated launch option for sonar
+  * Added seperate sonar package
+  * Updated package informations
+  * Added display launch
+  * Merged dev-ekf
+  * Fixed hardware comm
+  * Organized config files
+  * Contributors: Akif, MRP2 Dev
+
+ -- Akif Hacinecipoglu <akifhno@gmail.com>  Wed, 09 Mar 2016 22:00:00 -0000
+
+ros-melodic-mrp2-bringup (0.2.1-2stretch) stretch; urgency=high
+
+  * Organized code and structure
+  * Directory structure update
+  * Initial commit
+  * Contributors: Akif, MRP2 Development
+
+ -- Akif Hacinecipoglu <akifhno@gmail.com>  Sun, 10 Jan 2016 22:00:00 -0000
+
+
