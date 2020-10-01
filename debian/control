@@ -1,0 +1,12 @@
+Source: ros-melodic-mrp2-robot
+Section: misc
+Priority: optional
+Maintainer: Akif Hacinecipoglu <akifhno@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin
+Homepage: http://wiki.ros.org/mrp2_robot
+Standards-Version: 3.9.2
+
+Package: ros-melodic-mrp2-robot
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-mrp2-bringup, ros-melodic-mrp2-display, ros-melodic-mrp2-hardware
+Description: MRP2 robot description and launch files
