@@ -1,0 +1,50 @@
+ros-melodic-mrp2-hardware (0.2.6-1bionic) bionic; urgency=high
+
+  * updated changelogs
+  * updated changelogs
+  * updated changelogs
+  * Contributors: OnurDz
+  * updated changelogs
+  * updated changelogs
+  * Contributors: OnurDz
+  * updated changelogs
+  * Contributors: OnurDz
+
+ -- Akif Hacinecipoglu <akifhno@gmail.com>  Mon, 05 Oct 2020 21:00:00 -0000
+
+ros-melodic-mrp2-hardware (0.2.5-1bionic) bionic; urgency=high
+
+  * Removed redundant topics
+  * Fixed bringup
+  * Implemented motor controller
+  * Minor fixes
+  * Solved hw problems. Updated parameters.
+  * Contributors: Akif
+
+ -- Akif Hacinecipoglu <akifhno@gmail.com>  Mon, 15 Aug 2016 21:00:00 -0000
+
+ros-melodic-mrp2-hardware (0.2.4-1bionic) bionic; urgency=high
+
+  * Added udev for debian
+  * Added seperate sonar package
+  * Updated launch option for sonar
+  * Added seperate sonar package
+  * Updated package informations
+  * Updated dependencies
+  * Fixed display driver serial.
+  * Fixed hardware comm
+  * Fixed checksum bug.
+  * Contributors: Akif, Akif Hacinecipoglu, Bolkar Altuntas, MRP2 Dev
+
+ -- Akif Hacinecipoglu <akifhno@gmail.com>  Wed, 09 Mar 2016 22:00:00 -0000
+
+ros-melodic-mrp2-hardware (0.2.1-1bionic) bionic; urgency=high
+
+  * Organized code and structure
+  * Package information update
+  * Initial commit
+  * Contributors: Akif, MRP2 Development
+
+ -- Akif Hacinecipoglu <akifhno@gmail.com>  Sun, 10 Jan 2016 22:00:00 -0000
+
+
