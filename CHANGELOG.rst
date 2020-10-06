@@ -2,6 +2,26 @@
 Changelog for package mrp2_display
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.2.6 (2020-10-06)
+------------------
+* fix version for release
+* updated changelogs
+* updated changelogs
+* version bump
+* fix: missing dependency
+* updated changelogs
+* Contributors: OnurDz
+
+* updated changelogs
+* version bump
+* fix: missing dependency
+* updated changelogs
+* Contributors: OnurDz
+
+* fix: missing dependency
+* updated changelogs
+* Contributors: OnurDz
+
 0.2.5 (2016-08-16)
 ------------------
 * Fixed bringup
